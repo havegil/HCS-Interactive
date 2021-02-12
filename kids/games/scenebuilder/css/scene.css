@@ -1,0 +1,1054 @@
+	#scbldr-container[data-ui-state~="printing"] { border-color : transparent !important; }	
+	#scbldr-container[data-ui-state~="printing"] #scbldr-menu #scene-menu { visibility: hidden; }
+	#scbldr-container[data-ui-state~="printing"] #scbldr-menu #sticker-menu .label-container { visibility: hidden; }
+	#scbldr-container[data-ui-state~="printing"] #scbldr-menu #sticker-menu #drg-stickers { background: transparent; }
+	#scbldr-container[data-ui-state~="printing"] #scbldr-menu #sticker-menu #drg-stickers li .drag_box .draggables  { visibility: hidden; }
+	#scbldr-container[data-ui-state~="printing"] #scbldr-menu #sticker-menu #drg-stickers li .drag_box .draggables[data-ui-state="onStage"]  { visibility: visible; }
+	#scbldr-container[data-ui-state~="printing"] #scbldr-menu #sticker-menu #drg-stickers li .drag_box .drag-copy  { visibility: hidden; }
+
+
+	/*phone*/
+	@media only screen and (min-width: 1px) {
+		#head-btn-container #header{display:none;}
+	}
+
+	/*phone-landscape*/
+	@media only screen and (min-width: 480px) {
+		/* .corner-round{border:none;border-radius:none;box-shadow: none;background: none;	}
+		#game-container {width:70%;}		
+		#game-container #head-btn-container h1{display:block;}
+		#game-container #scbldr-container{border:none;border-radius:0;box-shadow: none;background: none;	}
+		#scbldr-container #scbldr-scene-container .scene img{width:100%;height:auto;max-width:892px;max-height:482px;}			
+
+		#scbldr-menu{bottom: .5%; position: absolute;width: 100%;z-index: 200;}
+
+		#scene-menu{width:30%; display: inline-block; float:left;}	
+		#sticker-menu{width:69%; display: inline-block;	float:left;	}
+
+		.label-container{position: relative; top:-10px;text-align:center;}
+		.label-container .menu_label{display:inline;width:35%;background:#2ac0d4;} 
+		.menu_label{-webkit-border-radius: 24px;-moz-border-radius: 24px;border-radius:7px;background:#2ac0d4;padding:5px 25px 5px 27px;font-size:16px;display:block;}
+
+		#scene-menu ul{padding:0;width:100%;}
+		#scene-menu ul li{width:50%;text-align:center;padding:0;display: inline;float:left;}
+		#scene-menu ul li .scene-sel1{float:right;padding-right:15px;}
+		#scene-menu ul li .scene-sel2{float:left;padding-left:15px;}
+		
+		#sticker-menu ul{padding:0;margin:0 auto;}
+		#sticker-menu ul li{text-align:center;padding:0;margin:0;display: inline;float:left;width:12%;}					
+		
+		.scene{	margin:0;}			
+		.scene img{	border:5px solid #f58428;-webkit-border-radius: 24px;-moz-border-radius: 24px;border-radius:24px;-webkit-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			-moz-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+		}
+		#no_portrait{display:none;}
+		#scene00, #scene01, #scene01m{display:none;}
+		#scene00m{display:block;} */
+		
+		/*remove above */
+		/* .corner-round{border:none;border-radius:none;box-shadow: none;background: none;	} */
+		#game-container {width:70%;}
+		#message-container{width:70%;}
+		#message-container p{margin-bottom:10%;font-size:.8em;}
+		#message-container img{width:45%}
+		#game-container #head-btn-container{margin-bottom:1%;margin:0;}
+		#game-container #head-btn-container #header {float:left;display:block;}
+		#game-container #head-btn-container #header h1 {font-size:1em;display:inline;position:relative;}
+		#game-container #head-btn-container img{width:65%;}
+		
+		#game-container #head-btn-container #logo-subway img{width:70%;}
+		#game-container #head-btn-container #logo-disney img{width:65%;}				
+		#game-container #head-btn-container #logo-disney{margin-left:-6%}
+		
+		#game-container #scbldr-container{width:100%;border:none;border-radius:0;box-shadow: none;background: none;}
+/*		#scbldr-scene-container {
+			overflow   : auto;
+		}*/
+		#scbldr-container #scbldr-scene-container .scene img{
+			/*viewer image*/
+			box-sizing : border-box;
+			width      : 100%;
+			height     : auto;
+			max-width  : 892px;
+			max-height : 482px;
+		}			
+		#scbldr-container h1{display:none;}
+		#scbldr-menu {
+			box-sizing : border-box;
+			z-index    : 200;
+			position   : absolute;
+			bottom     : 0px; 
+			width      : 100%;
+			max-height : 60px;
+			padding    : 0px 5px 5px 5px;
+		}
+
+			#scene-menu { 
+				box-sizing: border-box;
+				position : relative;
+				height   : 55px;
+				width    : 27%; 
+				display  : inline-block; 
+				float    : left;
+
+				/*background : rgba(0,0,0,0.2);*/
+			}	
+				.label-container {
+					z-index    : 9; 
+					box-sizing : border-box; 
+					position   : relative; 
+					top        : 0px;
+					padding    : 0px;
+					text-align : center;
+				}
+				.menu_label { 
+					position              : relative;
+					top                   : -2px; 
+					display               : inline-block;
+					padding               : 3px 15px 3px 15px;
+					margin                : auto;
+					-webkit-border-radius : 3px;
+					-moz-border-radius    : 3px;
+					border-radius         : 3px;
+					background            : #2ac0d4;
+					font-size             : .4em;
+					text-align            : center; 
+				}
+
+				#scbldr-menu ul#lst-scene {
+					z-index    : 10;
+					position   : relative; 
+					top        : 0px;
+					height     : 45%;
+					width      : 100%;
+					padding    : 0px;
+					overflow   : auto;
+					background : transparent;
+				}
+					#lst-scene li {
+						position      : relative;
+						float         : left;
+						height        : 100%;
+						width         : 50%;
+						margin-bottom : 0px !important;
+						padding       : 0px; 
+					}
+						#lst-scene li .scene-sel1, #lst-scene li .scene-sel2 {
+							position   : relative;
+							height     : 100%;
+							width      : 100%;
+							padding    : 0px !important;
+							float      : none !important;
+							display    : inline-block;
+							text-align : center; 
+						}
+							#lst-scene li .scene-sel1 img, #lst-scene li .scene-sel2 img {
+								position   : relative;
+								height     : 60%;
+							}
+		#sticker-menu { 
+			position : relative;
+			height   : 45px; 
+			width    : 72%; 
+			display  : inline-block;	
+		}
+			/*.label-container {}*/
+			/*.label-container .menu_label{display:inline;width:35%;background:#2ac0d4;} */
+			ul#drg-stickers {
+				z-index    : 10;
+				position   : relative;
+				top        : 0px;
+				height     : 75%;
+				width      : 100%;
+				padding    : 0px;
+				margin     : 0px;
+				background : transparent;  
+			}
+			ul#drg-stickers li {
+				/*maybe no position*/
+				position : relative; 
+				float    : left;
+				width    : 12% !important;
+				height   : 100%;
+				padding  : 0;
+				margin   : 0;
+
+			}
+				ul#drg-stickers li .drag_box {
+					position   : relative;
+					height     : 100%;
+					width      : 100%;
+					display    : inline-block;
+					text-align : center; 
+				}
+					ul#drg-stickers li .drag_box .draggables {
+						position   : relative;
+						height     : 100%;
+						display    : block;
+						text-align : center; 
+					}
+						ul#drg-stickers li .drag_box .draggables img {
+							position   : relative;
+							top        : 4%;
+							height     : 65%; 
+						}
+					ul#drg-stickers li .drag_box .drag-copy {
+						z-index  : 10; 
+						position : relative;
+						top      : 0;
+						left     : 0;
+						height   : 100%; 
+						opacity  : 0.3;
+					}
+						ul#drg-stickers li .drag_box .drag-copy img {
+							position   : relative;
+							top        : 4%;
+							height     : 65%;
+							text-align : center;
+						}
+		#game-container .scene_dsk{margin-left:0;}
+/*		#scene-menu ul{padding:0;width:100%;}
+		#scene-menu ul li{width:50%;text-align:center;padding:0;display: inline;float:left;}
+		#scene-menu ul li img{width:60%;}
+		#scene-menu ul li .scene-sel1{float:right;padding-right:0;}
+		#scene-menu ul li .scene-sel2{float:left;padding-left:15px;}*/
+		
+		/*#sticker-menu ul{padding:0;margin:0 auto;}*/
+/*		#sticker-menu ul li img{width:85%;}
+		#sticker-menu ul li{text-align:center;padding:0;margin:0;display: inline;float:left;width:12%;}		*/			
+		
+		.scene{	margin:0;}			
+		.scene img{	border:5px solid #f58428;-webkit-border-radius: 24px;-moz-border-radius: 24px;border-radius:24px;-webkit-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			-moz-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+		}
+		#game-container #scbldr-footer-container {margin-top:1%}
+		#scbldr-footer-container img{width:25%}
+		#no_portrait{display:none;}
+		#scene00, #scene01, #scene01m{display:none;}
+		#scene00m{display:block;}
+	}
+
+	/*android-tablet*/
+	@media only screen and (min-width: 670px) and (orientation: portrait) {
+		
+	}
+
+	/*ipad*/
+	@media only screen and (min-width: 670px) {
+
+	}
+
+	/*desktop-md*/
+	@media only screen and (min-width: 959px) {
+			
+		#game-container #message-container .how_to_play {
+			padding: 31px 0;
+			text-align: center;
+		}	
+		#game-container #message-container p {
+			font-size: 1.4em;
+			margin-bottom: 20%;
+		}
+			
+		#game-container #instruct-container img{width:60%	}
+		#game-container #head-btn-container img{width:100%;}
+				
+		#game-container #head-btn-container #header h1{display:none;}
+		
+		#game-container #head-btn-container #logo-subway img{width:100%;}
+		#game-container #head-btn-container #logo-disney img{width:100%;}				
+		#game-container #head-btn-container #logo-disney{margin-left:20px;}
+		
+
+		#game-container .scene_dsk{margin-left: -67px;}
+		.drag_box{position:relative;}
+		#game-container #scbldr-container{
+			width:100%;
+			border:5px solid #f58428;
+			-webkit-border-radius: 24px;
+			-moz-border-radius: 24px;
+			border-radius: 24px;
+			
+			-webkit-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			-moz-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			
+			background: #fff none repeat scroll 0 0;
+			height:570px;
+		}
+		#game-container #scbldr-container #scbldr-scene-container .scene img{	border:none;border-radius:0;box-shadow: none;}
+		#game-container #scbldr-container #scbldr-scene-container .scene{display: inline-block;float: right;margin:75px 0 40px 0;}
+		
+		#scbldr-container h1{display:block;}
+		#scbldr-scene-container{width:100%;	position:relative;}
+		#game-container #scbldr-container #scbldr-menu{display:inline-block;position:absolute;bottom:auto;width:auto;padding:0}
+		#game-container #scbldr-container #scbldr-menu  ul{list-style-type:none;background:#e5f6f9;	margin: 0;padding: 5px 0 0 10px;width: 80%;}
+		#game-container #scbldr-container #scene-menu ul li{width:auto;text-align:auto;padding:0;display: block;float:none;}
+		#game-container #scbldr-container #sticker-menu ul li{width:auto;text-align:auto;padding:0;display: block;float:none;}
+		#game-container #scbldr-container #scene-menu ul li img{width:60%;margin-bottom:10%}
+		/*#sticker-menu, ul li img{width:65%;}*/
+		#game-container #scbldr-container #sticker-menu, #game-container #scbldr-container #scene-menu{ display: inline;float: none; width: auto;}
+		#game-container #scbldr-container #scene-menu .label-container{position: auto; top:auto;text-align:inherit;display:inline;}
+		#game-container #scbldr-container #scene-menu .label-container .menu_label{-webkit-border-radius: 7px;-moz-border-radius: 7px;border-top-right-radius:7px;border-bottom-right-radius:7px;background:#f58428;
+			margin-top:25px !important;padding:5px 25px 5px 27px;font-size:12px;width:auto;	display:inline-block;border-top-left-radius:0;border-bottom-left-radius:0;}
+		#game-container #scbldr-container #scene-menu .label-container .sticker{background:#2ac0d4; margin-top:0 !important;}
+		/*clear floats - overflow auto*/
+		ul#lst-scene,ul#lst-scene li {overflow:auto;margin-bottom:0px !important;}
+		#game-container #scbldr-container #scbldr-menu ul#lst-scene{background:#e5f6f9;width:90%;}
+		#game-container #scbldr-container #scbldr-menu ul#drg-stickers li img{margin-bottom:10%}
+		#no_portrait{display:none;}
+		#game-container #scbldr-container #scbldr-scene-container #scene00{display:block;}
+		#scene00m, #scene01, #scene01m{display:none !important;}
+		#btn-print img{width:100%;}
+		.btn_print{	display:block;}
+	}
+
+	/*android-tablet-landscape*/
+	@media only screen and (min-width: 960px) and (min-device-pixel-ratio: 1) {
+		/* .corner-round{border:none;border-radius:none;box-shadow: none;background: none;	} */
+		#game-container {width:70%;}
+		#message-container{width:70%;}
+		#message-container p{margin-bottom:10%;font-size:.8em;}
+		#message-container img{width:45%}
+		#game-container #head-btn-container{margin-bottom:1%;margin:0;}
+		#game-container #head-btn-container #header {float:left;display:block;}
+		#game-container #head-btn-container #header h1 {font-size:1.4em;display:inline;position:relative;}
+		#game-container #head-btn-container img{width:65%;}
+		
+		#game-container #head-btn-container #logo-subway img{width:70%;}
+		#game-container #head-btn-container #logo-disney img{width:65%;}				
+		#game-container #head-btn-container #logo-disney{margin-left:-6%}
+		
+		#scbldr-container{width:100%;border:none;border-radius:none;box-shadow: none;background: none;}
+		#scbldr-container #scbldr-scene-container .scene img{width:100%;height:auto;max-width:892px;max-height:482px;}			
+		#scbldr-container h1{display:none;}
+		#scbldr-menu{bottom: -5%; position: absolute;width: 100%;z-index: 200;}
+
+		#scene-menu{width:30%; display: inline-block; float:left;}	
+		#sticker-menu{width:69%; display: inline-block;	float:left;	}
+
+		.label-container{position: relative; top:-10px;text-align:center;}
+		.label-container .menu_label{display:inline;width:35%;background:#2ac0d4;} 
+		.menu_label{-webkit-border-radius: 7px;-moz-border-radius:7px;border-radius:7px;background:#2ac0d4;padding:5px 10px 5px 10px;font-size:.5em;display:block;}
+		#game-container .scene_dsk{margin-left:0;}
+		#scene-menu ul{padding:0;width:100%;}
+		#scene-menu ul li{width:50%;text-align:center;padding:0;display: inline;float:left;}
+		#scene-menu ul li img{width:60%;}
+		#scene-menu ul li .scene-sel1{float:right;padding-right:0;}
+		#scene-menu ul li .scene-sel2{float:left;padding-left:15px;}
+		
+		#sticker-menu ul{padding:0;margin:0 auto;}
+		#sticker-menu ul li img{width:85%;}
+		#sticker-menu ul li{text-align:center;padding:0;margin:0;display: inline;float:left;width:12%;}					
+		
+		.scene{	margin:0;}			
+		.scene img{	border:5px solid #f58428;-webkit-border-radius: 24px;-moz-border-radius: 24px;border-radius:24px;-webkit-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			-moz-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+		}
+		#game-container #scbldr-footer-container {margin-top:1%}
+		#scbldr-footer-container img{width:25%}
+		#no_portrait{display:none;}
+		#scene00, #scene01, #scene01m{display:none;}
+		#scene00m{display:block;}
+	}
+
+	/*ipad-landscape*/
+	@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+		/* .corner-round{border:none;border-radius:none;box-shadow: none;background: none;	} */
+		
+		#game-container {width:70%;}
+		#message-container{width:70%;}
+		#message-container p{margin-bottom:10%;font-size:.8em;}
+		#message-container img{width:45%}
+		#game-container #head-btn-container{margin-bottom:1%;margin:0;}
+		#game-container #head-btn-container #header {float:left;display:block;}
+		#game-container #head-btn-container #header h1 {font-size:1.4em;display:none;position:relative;}
+		#game-container #head-btn-container img{width:65%;}
+		
+		#game-container #head-btn-container #logo-subway img{width:70%;}
+		#game-container #head-btn-container #logo-disney img{width:65%;}				
+		#game-container #head-btn-container #logo-disney{margin-left:-3%}
+		
+		#game-container #scbldr-container{border:none;border-radius:0;box-shadow: none;background: none;	height:auto;}
+		#scbldr-container #scbldr-scene-container .scene img{width:100%;height:auto;max-width:892px;max-height:482px;}			
+		#scbldr-container h1{display:none;}
+		#scbldr-menu{bottom: 5%; position: absolute;width: 100%;z-index: 200;}
+
+		#scene-menu{width:30%; display: inline-block; float:left;text-align: center}	
+		#sticker-menu{width:69%; display: inline-block;	float:left;	text-align:center;}
+
+		.label-container{top:-10px;margin-bottom:10px;}
+		.label-container .menu_label{background:#2ac0d4;width:35%;margin: 0 auto;margin-top:0 !important} /*display:inline;*/
+		.label-container .menu_label{-webkit-border-radius: 7px;-moz-border-radius:7px;border-radius:7px;background:#2ac0d4;padding:5px 10px 5px 10px;font-size:1em;display:block;}
+		#game-container .scene_dsk{margin-left:0;}
+		#scene-menu ul#lst-scene{padding:0;width:100%;background:none;height:85%;}
+		#scene-menu ul#lst-scene li{width:50%;text-align:center;padding:0;display: inline;float:left;}
+		#scene-menu ul#lst-scene  li img{width:60%;}
+		#scene-menu ul#lst-scene  li .scene-sel1{float:right;padding-right:0;}
+		#scene-menu ul#lst-scene  li .scene-sel2{float:left;padding-left:15px;}
+		
+		#sticker-menu ul{padding:0;margin:0 auto;}
+		#sticker-menu ul li img{width:85%;}
+		#sticker-menu ul li{text-align:center;padding:0;margin:0;display: inline;float:left;width:12%;}					
+		
+		.scene{	margin:0;}			
+		.scene img{	border:5px solid #f58428;-webkit-border-radius: 24px;-moz-border-radius: 24px;border-radius:24px;-webkit-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			-moz-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+		}
+		#game-container #scbldr-footer-container {margin-top:1%}
+		#scbldr-footer-container img{width:25%}
+		/* #no_portrait, .btn_print{display:none;} */
+		#scene00, #scene01, #scene01m, #no_portrait, .btn_print{display:none;}
+		#scene00m{display:block;}
+		
+	}
+
+	/*desktop-lg*/
+	/* @media only screen and (min-width: 1367px) {
+		.scene img{	border:none;}
+		#scbldr-scene-container{	width:100%;	position:relative;}
+		#scbldr-menu{display:inline-block;position:absolute;bottom:auto}
+		#scbldr-menu  ul{list-style-type:none;background:#e5f6f9;	margin: 0;padding: 5px 0 0 10px;width: 80%;}
+		#sticker-menu, #scene-menu{ display: block;float: none; width: auto;}
+		.menu_label{-webkit-border-radius: 24px;-moz-border-radius: 24px;border-top-right-radius:7px;border-bottom-right-radius:7px;background:#f58428;
+			margin-top:25px;
+			padding:5px 25px 5px 27px;
+			font-size:12px;
+			font-family:Arial;
+			font-weight:bold;
+			color:#ffffff;
+		}
+		.sticker{background:#2ac0d4; margin-top:0;}
+		#scene00{display:block;}
+		#scene01{display:none;}
+		#scene00m{display:none;}
+	} */
+
+	/*iphone4*/
+	@media only screen and (-webkit-device-pixel-ratio: 2) {
+		/* .corner-round{border:none;border-radius:none;box-shadow: none;background: none;	} */
+		#game-container {width:70%;}
+		#message-container{width:70%;}
+		#message-container p{margin-bottom:10%;font-size:.8em;}
+		#message-container img{width:45%}
+		#game-container #head-btn-container{margin-bottom:1%;margin:0;}
+		#game-container #head-btn-container #header {float:left;display:block;}
+		#game-container #head-btn-container #header h1 {font-size:1em;display:inline;position:relative;}
+		#game-container #head-btn-container img{width:65%;}
+		
+		#game-container #head-btn-container #logo-subway img{width:70%;}
+		#game-container #head-btn-container #logo-disney img{width:65%;}				
+		#game-container #head-btn-container #logo-disney{margin-left:-6%}
+		
+		#scbldr-container{width:100%;border:none;border-radius:0;box-shadow: none;background: none;}
+/*		#scbldr-scene-container {
+			overflow   : auto;
+		}*/
+		#scbldr-container #scbldr-scene-container .scene img{
+			/*viewer image*/
+			box-sizing : border-box;
+			width      : 100%;
+			height     : auto;
+			max-width  : 892px;
+			max-height : 482px;
+		}			
+		#scbldr-container h1{display:none;}
+		#scbldr-menu {
+			box-sizing : border-box;
+			z-index    : 200;
+			position   : absolute;
+			bottom     : 0px; 
+			width      : 100%;
+			max-height : 45px;
+			padding    : 0px 5px 5px 5px;
+		}
+
+			#scene-menu { 
+				box-sizing: border-box;
+				position : relative;
+				height   : 55px;
+				width    : 27%; 
+				display  : inline-block; 
+				float    : left;
+
+				/*background : rgba(0,0,0,0.2);*/
+			}	
+				.label-container {
+					z-index    : 9; 
+					box-sizing : border-box; 
+					position   : relative; 
+					top        : 0px;
+					padding    : 0px;
+					text-align : center;
+				}
+				.menu_label { 
+					position              : relative;
+					top                   : -2px; 
+					display               : inline-block;
+					padding               : 3px 15px 3px 15px;
+					margin                : auto;
+					-webkit-border-radius : 3px;
+					-moz-border-radius    : 3px;
+					border-radius         : 3px;
+					background            : #2ac0d4;
+					font-size             : .4em;
+					text-align            : center; 
+				}
+
+				#scbldr-menu ul#lst-scene {
+					z-index    : 10;
+					position   : relative; 
+					top        : 0px;
+					height     : 45%;
+					width      : 100%;
+					padding    : 0px;
+					overflow   : auto;
+					background : transparent;
+				}
+					#lst-scene li {
+						position      : relative;
+						float         : left;
+						height        : 100%;
+						width         : 50%;
+						margin-bottom : 0px !important;
+						padding       : 0px; 
+					}
+						#lst-scene li .scene-sel1, #lst-scene li .scene-sel2 {
+							position   : relative;
+							height     : 100%;
+							width      : 100%;
+							padding    : 0px !important;
+							float      : none !important;
+							display    : inline-block;
+							text-align : center; 
+						}
+							#lst-scene li .scene-sel1 img, #lst-scene li .scene-sel2 img {
+								position   : relative;
+								height     : 60%;
+							}
+		#sticker-menu { 
+			position : relative;
+			height   : 45px; 
+			width    : 72%; 
+			display  : inline-block;	
+		}
+			/*.label-container {}*/
+			/*.label-container .menu_label{display:inline;width:35%;background:#2ac0d4;} */
+			ul#drg-stickers {
+				z-index    : 10;
+				position   : relative;
+				top        : 0px;
+				height     : 45%;
+				width      : 100%;
+				padding    : 0px;
+				margin     : 0px;
+				background : transparent;  
+			}
+			ul#drg-stickers li {
+				/*maybe no position*/
+				position : relative; 
+				float    : left;
+				width    : 12% !important;
+				height   : 100%;
+				padding  : 0;
+				margin   : 0;
+
+			}
+				ul#drg-stickers li .drag_box {
+					position   : relative;
+					height     : 100%;
+					width      : 100%;
+					display    : inline-block;
+					text-align : center; 
+				}
+					ul#drg-stickers li .drag_box .draggables {
+						position   : relative;
+						height     : 100%;
+						display    : block;
+						text-align : center; 
+					}
+						ul#drg-stickers li .drag_box .draggables img {
+							position   : relative;
+							top        : 4%;
+							height     : 65%; 
+						}
+					ul#drg-stickers li .drag_box .drag-copy {
+						z-index  : 10; 
+						position : relative;
+						top      : 0;
+						left     : 0;
+						height   : 100%; 
+						opacity  : 0.3;
+					}
+						ul#drg-stickers li .drag_box .drag-copy img {
+							position   : relative;
+							top        : 4%;
+							height     : 65%;
+							text-align : center;
+						}
+		#game-container .scene_dsk{margin-left:0;}
+/*		#scene-menu ul{padding:0;width:100%;}
+		#scene-menu ul li{width:50%;text-align:center;padding:0;display: inline;float:left;}
+		#scene-menu ul li img{width:60%;}
+		#scene-menu ul li .scene-sel1{float:right;padding-right:0;}
+		#scene-menu ul li .scene-sel2{float:left;padding-left:15px;}*/
+		
+		/*#sticker-menu ul{padding:0;margin:0 auto;}*/
+/*		#sticker-menu ul li img{width:85%;}
+		#sticker-menu ul li{text-align:center;padding:0;margin:0;display: inline;float:left;width:12%;}		*/			
+		
+		.scene{	margin:0;}			
+		.scene img{	border:5px solid #f58428;-webkit-border-radius: 24px;-moz-border-radius: 24px;border-radius:24px;-webkit-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			-moz-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+		}
+		#game-container #scbldr-footer-container {margin-top:1%}
+		#scbldr-footer-container img{width:25%}
+		#no_portrait{display:none;}
+		#scene00, #scene01, #scene01m{display:none;}
+		#scene00m{display:block;}
+	}
+
+	/*iphone6*/
+	@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+/* 		#no_portrait{display:block;}
+		#game-container{display:none;} */
+	}
+
+	/*iphone6-landscape*/
+	@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+		/* .corner-round{border:none;border-radius:none;box-shadow: none;background: none;	} */
+		#game-container {width:70%;}
+		#message-container{width:70%;}
+		#message-container p{margin-bottom:10%;font-size:.8em;}
+		#message-container img{width:45%}
+		#game-container #head-btn-container{margin-bottom:1%;margin:0;}
+		#game-container #head-btn-container #header {float:left;display:block;}
+		#game-container #head-btn-container #header h1 {font-size:1.4em;display:none;position:relative;}
+		 #game-container #head-btn-container img{width:auto;} 
+		
+		#game-container #head-btn-container #logo-subway img{width:70%;}
+		#game-container #head-btn-container #logo-disney img{width:65%;}				
+		#game-container #head-btn-container #logo-disney{margin-left:-6%}
+		
+		#scbldr-container{width:100%;border:none;border-radius:0;box-shadow: none;background: none;}
+/*		#scbldr-scene-container {
+			overflow   : auto;
+		}*/
+		#scbldr-container #scbldr-scene-container .scene img{
+			/*viewer image*/
+			box-sizing : border-box;
+			width      : 100%;
+			height     : auto;
+			max-width  : 892px;
+			max-height : 482px;
+		}			
+		#scbldr-container h1{display:none;}
+		#scbldr-menu {
+			box-sizing : border-box;
+			z-index    : 200;
+			position   : absolute;
+			bottom     : 0px; 
+			width      : 100%;
+			max-height : 85px;
+			padding    : 0px 5px 5px 5px;
+		}
+
+			#scene-menu { 
+				box-sizing: border-box;
+				position : relative;
+				height   : 85px;
+				width    : 27%; 
+				display  : inline-block; 
+				float    : left;
+
+				/*background : rgba(0,0,0,0.2);*/
+			}	
+				.label-container {
+					z-index    : 9; 
+					box-sizing : border-box; 
+					position   : relative; 
+					top        : 17px;
+					padding    : 8px 0px;
+					text-align : center;
+				}
+				.menu_label { 
+					display               : inline-block;
+					padding               : 5px 25px 5px 27px;
+					margin                : auto;
+					-webkit-border-radius : 7px;
+					-moz-border-radius    : 7px;
+					border-radius         : 7px;
+					background            : #2ac0d4;
+					font-size             : .5em;
+					text-align            : center; 
+				}
+
+				#scbldr-menu ul#lst-scene {
+					z-index    : 10;
+					position   : relative; 
+					top        : 1px;
+					height     : 50%;
+					width      : 100%;
+					padding    : 0px;
+					overflow   : auto;
+					background : transparent;
+				}
+					#lst-scene li {
+						position      : relative;
+						float         : left;
+						height        : 100%;
+						width         : 50%;
+						margin-bottom : 0px !important;
+						padding       : 0px; 
+					}
+						#lst-scene li .scene-sel1, #lst-scene li .scene-sel2 {
+							position   : relative;
+							height     : 100%;
+							width      : 100%;
+							padding    : 0px !important;
+							float      : none !important;
+							display    : inline-block;
+							text-align : center; 
+						}
+							#lst-scene li .scene-sel1 img, #lst-scene li .scene-sel2 img {
+								position   : relative;
+								top        : 50%;
+								height     : 50%;
+								margin-top : -40%;
+							}
+		#sticker-menu { 
+			position : relative;
+			height   : 85px; 
+			width    : 72%; 
+			display  : inline-block;	
+		}
+			/*.label-container {}*/
+			/*.label-container .menu_label{display:inline;width:35%;background:#2ac0d4;} */
+			ul#drg-stickers {
+				z-index    : 10;
+				position   : relative;
+				top        : 1px;
+				height     : 50%;
+				width      : 100%;
+				padding    : 0px;
+				margin     : 0px;
+				background : transparent;  
+			}
+			ul#drg-stickers li {
+				/*maybe no position*/
+				position : relative; 
+				float    : left;
+				width    : 12% !important;
+				height   : 100%;
+				padding  : 0;
+				margin   : 0;
+
+			}
+				ul#drg-stickers li .drag_box {
+					position   : relative;
+					height     : 100%;
+					width      : 100%;
+					display    : inline-block;
+					text-align : center; 
+				}
+					ul#drg-stickers li .drag_box .draggables {
+						position   : relative;
+						height     : 100%;
+						display    : block;
+						text-align : center; 
+					}
+						ul#drg-stickers li .drag_box .draggables img {
+							position   : relative;
+							top        : 50%;
+							height     : 55%;
+							margin-top : -25%; 
+						}
+					ul#drg-stickers li .drag_box .drag-copy {
+						z-index  : 10; 
+						position : relative;
+						top      : 0;
+						left     : 0;
+						height   : 100%; 
+						opacity  : 0.3;
+					}
+						ul#drg-stickers li .drag_box .drag-copy img {
+							position   : relative;
+							top        : 50%;
+							height     : 55%;
+							margin-top : -25%;
+							text-align : center;
+						}
+		#game-container .scene_dsk{margin-left:0;}
+/*		#scene-menu ul{padding:0;width:100%;}
+		#scene-menu ul li{width:50%;text-align:center;padding:0;display: inline;float:left;}
+		#scene-menu ul li img{width:60%;}
+		#scene-menu ul li .scene-sel1{float:right;padding-right:0;}
+		#scene-menu ul li .scene-sel2{float:left;padding-left:15px;}*/
+		
+		/*#sticker-menu ul{padding:0;margin:0 auto;}*/
+/*		#sticker-menu ul li img{width:85%;}
+		#sticker-menu ul li{text-align:center;padding:0;margin:0;display: inline;float:left;width:12%;}		*/			
+		
+		.scene{	margin:0;}			
+		.scene img{	border:5px solid #f58428;-webkit-border-radius: 24px;-moz-border-radius: 24px;border-radius:24px;-webkit-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			-moz-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+		}
+		#game-container #scbldr-footer-container {margin-top:1%}
+		#scbldr-footer-container img{width:25%}
+		#no_portrait{display:none;}
+		#scene00, #scene01, #scene01m{display:none;}
+		#scene00m{display:block;}
+	}
+
+	/*iphone6plus*/
+	@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+/* 		#no_portrait{display:block;}
+		#game-container{display:none;} */
+	}
+
+	/*iphone6plus-landscape*/
+	@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+		/* .corner-round{border:none;border-radius:none;box-shadow: none;background: none;	} */
+		#game-container {width:70%;}
+		#message-container{width:70%;}
+		#message-container p{margin-bottom:10%;font-size:.8em;}
+		#message-container img{width:45%}
+		#game-container #head-btn-container{margin-bottom:1%;margin:0;}
+		#game-container #head-btn-container #header {float:left;display:block;}
+		#game-container #head-btn-container #header h1 {font-size:1.4em;display:none;position:relative;}
+		#game-container #head-btn-container img{width:65%;}
+		
+		#game-container #head-btn-container #logo-subway img{width:70%;}
+		#game-container #head-btn-container #logo-disney img{width:65%;}				
+		#game-container #head-btn-container #logo-disney{margin-left:-6%}
+		
+		#scbldr-container{width:100%;border:none;border-radius:0;box-shadow: none;background: none;}
+/*		#scbldr-scene-container {
+			overflow   : auto;
+		}*/
+		#scbldr-container #scbldr-scene-container .scene img{
+			/*viewer image*/
+			box-sizing : border-box;
+			width      : 100%;
+			height     : auto;
+			max-width  : 892px;
+			max-height : 482px;
+		}			
+		#scbldr-container h1{display:none;}
+		#scbldr-menu {
+			box-sizing : border-box;
+			z-index    : 200;
+			position   : absolute;
+			bottom     : 0px; 
+			width      : 100%;
+			max-height : 100px;
+			padding    : 0px 5px 5px 5px;
+		}
+
+			#scene-menu { 
+				box-sizing: border-box;
+				position : relative;
+				height   : 85px;
+				width    : 27%; 
+				display  : inline-block; 
+				float    : left;
+
+				/*background : rgba(0,0,0,0.2);*/
+			}	
+				.label-container {
+					z-index    : 9; 
+					box-sizing : border-box; 
+					position   : relative; 
+					top        : 17px;
+					padding    : 8px 0px;
+					text-align : center;
+				}
+				.menu_label { 
+					display               : inline-block;
+					padding               : 5px 25px 5px 27px;
+					margin                : auto;
+					-webkit-border-radius : 7px;
+					-moz-border-radius    : 7px;
+					border-radius         : 7px;
+					background            : #2ac0d4;
+					font-size             : .5em;
+					text-align            : center; 
+				}
+
+				#scbldr-menu ul#lst-scene {
+					z-index    : 10;
+					position   : relative; 
+					top        : 1px;
+					height     : 60%;
+					width      : 100%;
+					padding    : 0px;
+					overflow   : auto;
+					background : transparent;
+				}
+					#lst-scene li {
+						position      : relative;
+						float         : left;
+						height        : 100%;
+						width         : 50%;
+						margin-bottom : 0px !important;
+						padding       : 0px; 
+					}
+						#lst-scene li .scene-sel1, #lst-scene li .scene-sel2 {
+							position   : relative;
+							height     : 100%;
+							width      : 100%;
+							padding    : 0px !important;
+							float      : none !important;
+							display    : inline-block;
+							text-align : center; 
+						}
+							#lst-scene li .scene-sel1 img, #lst-scene li .scene-sel2 img {
+								position   : relative;
+								top        : 50%;
+								height     : 50%;
+								margin-top : -40%;
+							}
+		#sticker-menu { 
+			position : relative;
+			height   : 85px; 
+			width    : 72%; 
+			display  : inline-block;	
+		}
+			/*.label-container {}*/
+			/*.label-container .menu_label{display:inline;width:35%;background:#2ac0d4;} */
+			ul#drg-stickers {
+				z-index    : 10;
+				position   : relative;
+				top        : 1px;
+				height     : 50%;
+				width      : 100%;
+				padding    : 0px;
+				margin     : 0px;
+				background : transparent;  
+			}
+			ul#drg-stickers li {
+				/*maybe no position*/
+				position : relative; 
+				float    : left;
+				width    : 12% !important;
+				height   : 100%;
+				padding  : 0;
+				margin   : 0;
+
+			}
+				ul#drg-stickers li .drag_box {
+					position   : relative;
+					height     : 100%;
+					width      : 100%;
+					display    : inline-block;
+					text-align : center; 
+				}
+					ul#drg-stickers li .drag_box .draggables {
+						position   : relative;
+						height     : 100%;
+						display    : block;
+						text-align : center; 
+					}
+						ul#drg-stickers li .drag_box .draggables img {
+							position   : relative;
+							top        : 50%;
+							height     : 55%;
+							margin-top : -25%; 
+						}
+					ul#drg-stickers li .drag_box .drag-copy {
+						z-index  : 10; 
+						position : relative;
+						top      : 0;
+						left     : 0;
+						height   : 100%; 
+						opacity  : 0.3;
+					}
+						ul#drg-stickers li .drag_box .drag-copy img {
+							position   : relative;
+							top        : 50%;
+							height     : 55%;
+							margin-top : -25%;
+							text-align : center;
+						}
+		#game-container .scene_dsk{margin-left:0;}
+/*		#scene-menu ul{padding:0;width:100%;}
+		#scene-menu ul li{width:50%;text-align:center;padding:0;display: inline;float:left;}
+		#scene-menu ul li img{width:60%;}
+		#scene-menu ul li .scene-sel1{float:right;padding-right:0;}
+		#scene-menu ul li .scene-sel2{float:left;padding-left:15px;}*/
+		
+		/*#sticker-menu ul{padding:0;margin:0 auto;}*/
+/*		#sticker-menu ul li img{width:85%;}
+		#sticker-menu ul li{text-align:center;padding:0;margin:0;display: inline;float:left;width:12%;}		*/			
+		
+		.scene{	margin:0;}			
+		.scene img{	border:5px solid #f58428;-webkit-border-radius: 24px;-moz-border-radius: 24px;border-radius:24px;-webkit-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			-moz-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+		}
+		#game-container #scbldr-footer-container {margin-top:1%}
+		#scbldr-footer-container img{width:25%}
+		#no_portrait{display:none;}
+		#scene00, #scene01, #scene01m{display:none;}
+		#scene00m{display:block;}
+	}
+	
+	/*ipad-retina-PORTRAIT*/
+	@media only screen and (min-width: 768px) and (-webkit-device-pixel-ratio: 2) {
+
+	}
+	
+	/*ipad-retina-landscape*/
+	@media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+		#game-container {width:70%;}
+		#message-container{width:70%;}
+		#message-container p{margin-bottom:10%;font-size:.8em;}
+		#message-container img{width:45%}
+		#game-container #head-btn-container{margin-bottom:1%;margin:0;}
+		#game-container #head-btn-container #header {float:left;display:block;}
+		#game-container #head-btn-container #header h1 {font-size:1.4em;display:none;position:relative;}
+		#game-container #head-btn-container img{width:65%;}
+		
+		#game-container #head-btn-container #logo-subway img{width:70%;}
+		#game-container #head-btn-container #logo-disney img{width:65%;}				
+		#game-container #head-btn-container #logo-disney{margin-left:-3%}
+		
+		#game-container #scbldr-container{border:none;border-radius:0;box-shadow: none;background: none;	}
+		#scbldr-container #scbldr-scene-container .scene img{width:100%;height:auto;max-width:892px;max-height:482px;}			
+		#scbldr-container h1{display:none;}
+		#scbldr-menu{position: absolute;width: 100%;z-index: 200;max-height:85px;}
+
+		#scene-menu{width:30%; display: inline-block; float:left;}	
+		#sticker-menu{width:69%; display: inline-block;	float:left;	}
+
+		.label-container{position: relative; top:-10px;text-align:center;}
+		.label-container .menu_label{display:inline;width:35%;background:#2ac0d4;} 
+		.menu_label{-webkit-border-radius: 7px;-moz-border-radius:7px;border-radius:7px;background:#2ac0d4;padding:5px 10px 5px 10px;font-size:.5em;display:block;}
+		#game-container .scene_dsk{margin-left:0;}
+		#scene-menu ul#lst-scene {padding:0;width:80%;height:45px;}
+		#scene-menu ul#lst-scene li{width:50%;text-align:center;padding:0;display: inline;float:left;}
+		#scene-menu ul#lst-scene li img{width:60%;}
+		#scene-menu ul#lst-scene li .scene-sel1{float:right;padding-right:0;}
+		#scene-menu ul#lst-scene li .scene-sel2{float:left;padding-left:15px;}
+		
+		#sticker-menu ul#drg-stickers{padding:0;margin:0 auto;height:45px;}
+		#sticker-menu ul#drg-stickers li img{width:85%;}
+		#sticker-menu ul#drg-stickers li{text-align:center;padding:0;margin:0;display: inline;float:left;width:12%;}					
+		
+		.scene{	margin:0;}			
+		.scene img{	border:5px solid #f58428;-webkit-border-radius: 24px;-moz-border-radius: 24px;border-radius:24px;-webkit-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			-moz-box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+			box-shadow: 10px 10px 35px -8px rgba(51,51,51,0.3);
+		}
+		#game-container #scbldr-footer-container {margin-top:1%}
+		#scbldr-footer-container img{width:25%}
+		#no_portrait{display:none;}
+		#scene00, #scene01, #scene01m{display:none;}
+		#scene00m{display:block;}
+	}

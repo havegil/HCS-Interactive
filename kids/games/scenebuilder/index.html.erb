@@ -1,0 +1,141 @@
+﻿
+<% content_for :scripts do %>
+	<script type="text/javascript" src="js/vendor/es6-promise.js"></script>
+	<script type="text/javascript" src="js/vendor/html2canvas.min.js"></script>
+	<script type="text/javascript" src="js/deviceRotation.js"></script>
+	<script type="text/javascript" src="js/sceneBuilder.js"></script>
+<% end %>
+	<div class="print" data-js="toPrint"></div>
+
+	
+	<div id="game-container">
+		<!-- messaging-->
+		<div id="scbldr">
+			<!--top area-->
+			<div id="head-btn-container">
+				<div id="logo-subway"><img src="images/sk_logo.png"  width="100%"/></div>
+				<div id="logo-disney"><img src="images/dory_logo.png" width="100%"/></div>
+				<div id="header"><h1>DRAG. DROP. PLAY!</h1></div>
+				<div id="btn-close"></div>
+			</div>
+			
+			<!--messaging area-->
+			<div id="message-container">
+				<div id="instruct-container">
+					<div class="how_to_play"><img src="images/how_to_play.png" /></div>
+					<div class="instruct_copy"><p>Start by selecting your favorite scene maker background. Then use your mouse to drag and drop stickers of Dory and her friends onto the scene. When you’re finished making an awesome scene, print it out and play again! </p>
+					</div>		
+				</div>
+				<div class="btn_play"><img src="images/play_btn.png" /></div>
+				<!-- modal -->
+			</div>
+			
+			<!--game area-->
+			<div id="scbldr-container" class="">
+			
+				<div><h1>DRAG. DROP. PLAY!</h1></div>
+				<!--game droppables area-->
+				<div id="scbldr-scene-container">
+					<div class="scene ddtarget1">
+						<img id="scene00" src="images/scene_00.jpg" /> 
+						<img id="scene01" src="images/scene_01.jpg" />
+						<img id="scene00m" src="images/scene_00m.jpg" />
+						<img id="scene01m" src="images/scene_01m.jpg" />
+					</div>
+				</div>			
+			
+				<!--game menu area-->
+				<div id="scbldr-menu" class="no_drop">
+					<div id="scene-menu">
+						<div class="label-container">
+							<div class="menu_label">SCENES</div>
+						</div>
+						<ul id="lst-scene">
+							<li style="margin-bottom:15px;">    
+								<div class="scene-sel1">
+									<img src="images/scene_01_thumb.png">
+								</div>
+							</li>
+							<li>	
+								<div class="scene-sel2">
+									<img src="images/scene_02_thumb.png">
+								</div>
+							</li>							
+						</ul>
+					</div>
+					
+					<div id="sticker-menu">
+		
+						<div class="label-container">
+							<div class="menu_label sticker">STICKERS</div>
+						</div>
+						
+						<ul id="drg-stickers">
+							<li >  <!--style="margin-bottom:15px;"-->  
+								<div class="drag_box">
+									<div id="draggable1" class="draggables"><img src="images/dory.png"></div>
+								</div>
+							</li>
+							<li>	
+								<div class="drag_box">
+									<div class="draggables" id="draggable2"><img src="images/coral.png"></div>
+								</div>
+							</li>
+							<li>	
+								<div class="drag_box">
+									<div class="draggables" id="draggable3"><img src="images/shark.png"></div>
+								</div>
+							</li>
+							<li>	
+								<div class="drag_box">
+									<div class="draggables" id="draggable4"><img src="images/nemo.png"></div>
+								</div>
+							</li>
+							<li>	
+								<div class="drag_box">
+									<div class="draggables" id="draggable5"><img src="images/floor_plant.png"></div>
+								</div>
+							</li>	
+							<li>	
+								<div class="drag_box">
+									<div class="draggables" id="draggable6"><img src="images/bailey.png"></div>
+								</div>
+							</li>
+							<li>	
+								<div class="drag_box">
+									<div class="draggables" id="draggable7"><img src="images/grnklump.png"></div>
+								</div>
+							</li>	
+							<li>	
+								<div class="drag_box">
+									<div class="draggables" id="draggable8"><img src="images/hank.png"></div>
+								</div>
+							</li>							
+						</ul>
+							
+							<div class="scrller-arrow"><img src="images/more_arrow.png" align="center"></div>	
+					</div>
+				</div>
+				
+				<div class="clearfix"></div>
+				
+			</div>
+			
+			<!--game footer area-->
+			<div id="scbldr-footer-container">
+				<div id="btn-start-over" class="btn_start_over">
+					<img src="images/start_over.png" width="100%">
+				</div>
+				<div id="btn-print" class="btn_print"><img src="images/print.png" width="100%"></div>
+			</div>
+		</div>
+	</div>
+	<div id="no-portrait">
+		<img src="images/no_portrait.png" width="100%">
+	</div>
+
+
+
+
+
+

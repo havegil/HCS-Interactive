@@ -1,0 +1,59 @@
+---
+omniture_pageName: Kids Side Home
+omniture_channel: Kids
+---
+
+<div class="kids-home main-content clearfix">
+	<% if is_app %>
+		<div>
+			<a href="#ForParents" class="btn-for-parents"></a>
+		</div>  
+    <% end %>
+	
+    <div class="advertising">
+        HEY KIDS, THIS IS ADVERTISING!
+    </div>
+    <div class="clearfix">
+        <div class="lrg-promo-container">
+           <!-- <a href="<% if is_app %>javascript:trackButtonClick('Kids_Page','Button_Game_Puzzle', '/games/puzzle/index.html');return false"<% else %>./games/puzzle/index.html<% end %>" class="lrg-promo-unit corner-round" title="Solve our ZOOTOPIA Puzzle game">-->
+		   <a href="./games/scenebuilder/index.html" onclick="trackButtonClick('Kids_Page','Button_Game_SceneBuilder', './games/scenebuilder/index.html');return false;" class="lrg-promo-unit corner-round" title="FINDING DORY Scene Builder">
+                <div class="heading">
+					
+					<span class="yellow">PEEL.<br>STICK. PLAY!</span>
+                </div>
+				
+                <div class="description">
+				CREATE YOUR OWN FINDING DORY SCENE!
+                </div>				
+            </a>
+        </div>
+		
+        <div class="promos clearfix">
+            <ul>
+				<!-- p.u.1 -->
+				<li class="promo-unit-left">				
+                    <a href="./kids-mealbag.html" onclick="trackButtonClick('Kids_Page','Button_Kids-Mealbag', './kids-mealbag.html');return false;" class="secondary-unit-left corner-round single-unit-center" title="FREE 3D SCENE MAKER IN EVERY KIDS' MEAL!*">
+                        <div class="heading">
+							FREE 3D SCENE<br/>MAKER IN EVERY<br/>KIDS' MEAL!*
+                        </div>
+                    </a>
+					<div class="disclosure single-unit-disclosure">
+                        *Limited time only at participating restaurants, while supplies last.
+					</div>
+                </li>
+				<!-- p.u.2 -->
+				<li class="promo-unit-right">
+				
+                    <a href="./games/memory/fullscreen/index.html" onclick="trackButtonClick('Kids_Page','Button_Game_Memory', './games/memory/fullscreen/index.html');return false;" class="secondary-unit-right corner-round single-unit-center" title="DORY'S UNFORGETTABLE MATCHING GAME">
+                        <div class="heading">
+						DORY'S<br/>UNFORGETTABLE<br/>MATCHING GAME
+                        </div>
+                    </a>
+                </li>				
+            </ul>
+        </div>
+    </div>
+    <%= partial "layouts/footer" %>
+</div>
+
+

@@ -1,0 +1,61 @@
+html, body { 
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    color: white;
+}
+
+.solve-message{
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-o-border-radius: 20px;
+
+	/* firefox's individual border radius properties */
+	-moz-border-radius-topleft:15px; /* top left corner */
+	-moz-border-radius-topright:50px; /* top right corner */
+	-moz-border-radius-bottomleft:15px; /* bottom left corner */
+	-moz-border-radius-bottomright:50px; /* bottom right corner */
+	-moz-border-radius:10px 15px 15px 10px;  /* shorthand topleft topright bottomright bottomleft */
+
+	/* webkit's individual border radius properties */
+	-webkit-border-top-left-radius:15px; /* top left corner */
+	-webkit-border-top-right-radius:50px; /* top right corner */
+	-webkit-border-bottom-left-radius:15px; /* bottom left corner */
+	-webkit-border-bottom-right-radius:50px; /* bottom right corner */
+	
+	
+	font-family: "Brady";
+	color: #fff200;
+	line-height: .9em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+	background:#fffff;
+}
+
+.message-h1{
+	font-family: "Brady";
+	font-size:4em;
+	color:#fff200;
+	text-align:center;
+		text-shadow: 2px 2px #0c4358;
+}
+.message-copy{
+	padding:10px;
+	font-size:2em;
+	text-align:center;
+	color:#ffffff;
+}
+
+#fancybox-content {
+ border-color: #FF0000 !important; /* or whatever */
+}
+/* 525c65 */
+.fancybox-skin {
+ background-color: #0bb3d3 !important; /* or whatever */
+ border-color: #525c65 !important; /* or whatever */
+}
+

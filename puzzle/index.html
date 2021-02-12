@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,  width=device-width">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>SUBWAY KIDS&trade;</title>
+
+    <link href="../../../content/css/vendor/slick/slick.css" rel="stylesheet" type="text/css" /><link href="../../../content/css/vendor/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" /><link href="../../../content/css/site.css" rel="stylesheet" type="text/css" />
+        <link href="../../../content/css/vendor/mediaelement/mediaelementplayer.min.css" rel="stylesheet" type="text/css" />
+        <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+	 <link href="css/SliderStylesheet.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="kids kids_games kids_games_puzzle kids_games_puzzle_index">
+    <div id="bgWrapper">
+    <div class="wrapper">
+        <div id="header">
+            <div>
+                <a href="/" id="logo"></a>
+            </div>
+        </div>
+        
+
+
+<div class="puzzle main-content">
+    <a href="../../index.html" class="btn-back"></a>
+    <div id="img-puzzle" class="box" style="position:relative;display:inline-block;">
+	
+		<!-- instruction -->
+		<div class="instructions-container">
+			<div class="instruct-btns">
+				<div class="arrow-btn-left"><img src="img/previous.png" width="100%" /></div>
+				<div class="btn-prev"><img src="img/preview.png" width="50%" /></div>
+				<div class="arrow-btn-right"><img src="img/next.png" width="100%" /></div>
+			</div>
+			<div class="instructions">
+				<h1 class="heading">HOW TO PLAY</h1>
+				<p class="description">It's puzzle time, kids. Put the scrambled pieces in order and assemble the Avengers!</p>
+				<p class="description">To start, look for the empty square. Next, click on a puzzle piece to move it into the empty square. Keep going until you complete the puzzle! If you need a little help, click the "Preview" button to see what the fully assembled puzzle should look like.</p>
+				<p class="description">Use the arrows to scroll to the next puzzle.</p>
+				<p style="text-align:center" class="puzzle-btn-play"> <img src="img/play_game.png" width="50%" /></p>
+			</div>
+		</div>
+	
+		<!--instruction ends -->
+
+		<canvas id="puzzle-canvas"  style="z-index:90;position:relative;"></canvas>
+		<div class="solve-message"></div>
+		
+		<div id="warning">
+            <img src="img/warning.png" style="width:90%;height:auto;max-width:635px" />
+        </div>
+		
+    </div>
+	 <div id="hidden_clicker"></div> 
+	
+	<div id="footer" class="clearfix">
+    <div class="download-app">
+        <div class="content">
+            <p>FUN ON THE GO! GET THE SUBWAY KIDS&trade; APP!</p>
+            <p class="download-now">
+                <span class="ask-parents">Ask your parents to</span>
+                <a href="#" class="btn btn-download-now"></a>
+            </p>
+            <p class="app-stores">
+                <a href="#" class="btn btn-app-store"></a>
+                <a href="#" class="btn btn-google-play"></a>
+                <a href="#" class="btn btn-amazon-app-store"></a>
+            </p>
+        </div>
+    </div>
+    <div class="disclosure">
+        <div class="content">
+		<!-- <img src="/content/img/layout/marvel.png"/> -->
+            <p>
+				
+               <span class="marvel-bug"></span>
+			  <span class="disney-copyright">&copy; 2015 MARVEL www.marvel.com</span><br /> 
+                SUBWAY FRESH FIT FOR KIDS&trade; should not be considered a diet program. See
+<a href="http://www.subway.com/" onclick="return confirm('You are now leaving the SUBWAY KIDS(TM) website. Please click OK to continue.')">subway.com</a>
+for full nutritional information.<br />
+
+&copy; 2015 Doctor's Association Inc. SUBWAY&reg; is a registered trademark of Doctor's Associates Inc. All Rights Reserved.<br />
+
+<a href="http://www.subwaykids.com/Terms.aspx" target="_blank">Terms of Use</a>
+|
+<a href="http://www.subway.com/subwayroot/privacyNotice.aspx?nm=1" target="_blank" onclick="return confirm('You are now leaving the SUBWAY KIDS(TM) website. Please click OK to continue.')">Privacy Policy</a>
+
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+        <div class="push"></div>
+    </div>
+    <div id="footerVeggies"></div>
+</div>
+
+    <script src="../../../content/js/vendor/jquery-1.11.2.min.js" type="text/javascript"></script><script src="../../../content/js/vendor/slick.min.js" type="text/javascript"></script><script src="../../../content/js/vendor/jquery.fancybox.pack.js" type="text/javascript"></script><script src="../../../content/js/site.js" type="text/javascript"></script>
+
+        <script src="../../../content/js/vendor/mediaelementplayer.min.js" type="text/javascript"></script>
+        <script src="../../../content/js/vendor/s_code.js" type="text/javascript"></script>
+
+<script type="text/javascript"><!--
+	
+	//isolating app tracking
+
+	
+    s.pageName = "Game_Avengers_Puzzle"
+    s.server = "subwaykids.com"
+    s.trackingServer = "tracking.subwayfreshbuzz.com";
+    s.channel = "Puzzle"
+    s.pageType = ""
+		 
+    s.prop1 = ""
+    s.prop2 = ""
+    s.prop3 = ""
+    s.prop4 = ""
+    s.prop5 = ""
+    s.prop6 =  "Puzzle"
+    s.prop7 = ""
+    s.prop8 = ""
+    s.prop9 = ""
+		
+    s.events = ""
+    s.eVar19 = ""
+
+		
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+		
+    var s_code=s.t();if(s_code)document.write(s_code)//-->
+</script>
+
+    
+		<script>
+		$(document).ready(function () {
+			$('#hidden_clicker').click(function(){
+				showCongrats();
+			});
+			$('.puzzle-btn-play').click(function(){
+				$('.instructions-container').hide();
+				$('#puzzle-canvas').css({'display':'block'});
+			});			
+			
+			$('#puzzle-canvas').css({'display':'none'});
+			
+		});
+		
+			function showCongrats(){
+				$("#hidden_clicker").fancybox({
+					type: "html",
+					scrolling: "no",
+					padding: 0,
+					fitToView: false,
+					autoSize: false,
+					helpers: {
+						overlay: {
+							css: {'width':'100%','height':'100%', 'background': 'rgba(0, 0, 0, 0.50)' },
+							closeClick: false
+						}
+					},
+					beforeLoad: function () {					   
+
+						// set fancyBox content and pass parameters
+						var strHTML = "<h1 class='message-h1'>CONGRATULATIONS!</h1><p class='message-copy'>You've beaten this level, you can select another one by pressing the arrows</p>";
+						this.content = strHTML;
+						
+						// set fancyBox dimensions
+						this.width = 300;
+						this.height = 300;
+					},
+					afterShow: function () {
+						// initialize MEJS player				   
+					},
+					beforeClose: function () {
+					   
+					}
+				});
+			}
+			
+	
+	</script>
+	
+	<script src="js/slider.js"></script>
+	
+	<script>
+		initPuzzle();
+	</script>
+
+
+
+</body>
+</html>

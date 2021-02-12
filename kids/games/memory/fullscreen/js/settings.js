@@ -1,0 +1,24 @@
+var CANVAS_WIDTH = 1024;
+var CANVAS_HEIGHT = 768;
+
+var DISABLE_SOUND_MOBILE = true;
+
+var STATE_LOADING = 0;
+var STATE_MENU    = 1;
+var STATE_HELP    = 1;
+var STATE_GAME    = 3;
+
+var ON_MOUSE_DOWN  = 0;
+var ON_MOUSE_UP    = 1;
+var ON_MOUSE_OVER  = 2;
+var ON_MOUSE_OUT   = 3;
+var ON_DRAG_START  = 4;
+var ON_DRAG_END    = 5;
+
+var CARD_WIDTH = 160;
+var CARD_HEIGHT = 252;
+var MAX_CARDS = 16//20;//32;
+var SCORE_MATCH_CARD;
+var SCORE_TIME_LEFT_MULT;
+var TIME_FOR_MATCH_MULT;
+var NUM_BACKGROUNDS = 6;

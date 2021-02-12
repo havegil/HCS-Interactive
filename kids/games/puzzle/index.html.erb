@@ -1,0 +1,111 @@
+---
+omniture_pageName: Puzzle
+omniture_channel: Puzzle
+---
+
+
+<% content_for :head do %>
+    <%= stylesheet_link_tag "/kids/css/style" %>
+	 <%= stylesheet_link_tag "/kids/games/puzzle/css/SliderStylesheet.css" %>
+<% end %>
+
+<% content_for :scripts do %>
+
+		<script>
+		$(document).ready(function () {
+			$('#hidden_clicker').click(function(){
+				showCongrats();
+			});
+			$('.puzzle-btn-play').click(function(){
+				$('.instructions-container').hide();
+				$('#puzzle-canvas').css({'display':'block'});
+				trackButtonClick('Puzzle Game Page', 'GoodDino_Puzzle_Page:Button_Play_Game');
+			});			
+			
+			$('#puzzle-canvas').css({'display':'none'});
+			
+		});
+		
+			function showCongrats(){
+				$("#hidden_clicker").fancybox({
+					type: "html",
+					scrolling: "no",
+					padding: 0,
+					fitToView: false,
+					autoSize: false,
+					helpers: {
+						overlay: {
+							css: {'width':'100%','height':'100%', 'background': 'rgba(0, 0, 0, 0.50)' },
+							closeClick: false
+						}
+					},
+					beforeLoad: function () {					   
+
+						// set fancyBox content and pass parameters
+						var strHTML = "<h1 class='message-h1'>CONGRATULATIONS!</h1><p class='message-copy'>You've beaten this level, you can select another one by pressing the right arrow</p>";
+						this.content = strHTML;
+						
+						// set fancyBox dimensions
+						this.width = 300;
+						this.height = 300;
+					},
+					afterShow: function () {
+						// initialize MEJS player				   
+					},
+					beforeClose: function () {
+					   
+					}
+				});
+			}
+			
+	
+	</script>
+	
+	<script src="js/slider.js"></script>
+	
+	<script>
+		initPuzzle();
+	</script>
+
+<% end %>
+
+
+<div class="puzzle main-content">
+    <a href="../../index.html" class="btn-back"></a>
+    <div id="img-puzzle" class="box" style="position:relative;display:inline-block;">
+	
+		<!-- instruction -->
+		<div class="instructions-container">
+			<div class="instruct-btns">
+				<div class="arrow-btn-left"><img src="img/previous.png" width="100%" id="arrow-prev"/></div>
+				<div class="btn-prev"><img src="img/preview.png" width="50%" /></div>
+				<div class="arrow-btn-right"><img src="img/next.png" width="100%" /></div>
+			</div>
+			<div class="instructions rad_gradient">
+				<h1 class="heading">HOW TO PLAY</h1>
+				<p class="description">Unscramble the pieces to see your favorite <br/><em>The Jungle Book</em> characters!<br/>
+				Move puzzle pieces into the empty square by clicking on them. Keep moving pieces around until the picture is complete! Click the “Preview” button for a little extra help.<br/>
+				Use the arrows to scroll to the next puzzle. </p>
+				<p style="text-align:center" class="puzzle-btn-play"> <img src="img/play_game.png" width="50%" /></p>
+			</div>
+		</div>
+	
+
+		<!--instruction ends -->
+
+		<canvas id="puzzle-canvas" style="z-index:90;position:relative;"></canvas>
+		<div class="solve-message"></div>
+		
+		<div id="warning">
+            <img src="img/warning.png" style="width:90%;height:auto;max-width:635px" />
+        </div>
+		
+    </div>
+	 <div id="hidden_clicker"></div> 
+	
+	<%= partial "layouts/footer" %>
+</div>
+
+
+
+

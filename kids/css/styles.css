@@ -1,0 +1,821 @@
+/* The Atom Group */
+
+#jj{
+	width: 960px;
+	background: #fff;
+}
+#jj p, #jj .content-wrapper a, #jj .facts li{
+	font-family: helvetica, arial, sans-serif;
+	line-height: 1.4;
+	font-size: 14px;
+	margin: 1em 0;
+}
+
+/**** Fancybox overrides ****/
+#fancybox-close{
+	background: url("../img/modal-close.gif") 0 0 no-repeat;
+	right: 0;
+	top: 0;
+	width: 34px
+}
+#fancybox-left span {
+	left: 20px;
+}
+
+#fancybox-right span {
+	left: auto;
+	right: 20px;
+}
+#fancybox-outer{
+	padding: 10px 0;
+}
+
+/**** Header ****/
+#jj #explore-menu-button, #jj #explore-menu{
+	width: 217px;
+}
+#jj #explore-menu-button{
+	height: 46px;
+	background: url('../img/explore-button.png') no-repeat 0 0;
+	position: absolute;
+	z-index: 10;
+	margin-left: 4px;
+	color: transparent;
+	top: 145px;
+}
+#jj #explore-menu{
+	background: #e2ece3;
+	border: 1px solid #b1b1b1;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	display: none;
+	height: 286px; /*215*/
+	position: absolute;
+	margin-left: 4px;
+	top: 168px;
+	width: 204px;
+	z-index: 5;
+}
+
+#explore-menu ul li{
+	height: 34px;
+	margin-top: -1px;
+	width: 204px;
+}
+
+#explore-menu ul li:first-child{
+	height: 34px;
+	margin-top: -10px;
+	padding-top: 10px;
+}
+
+#explore-menu ul li:last-child{
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#explore-menu ul li:hover{
+	background: #16553c;
+}
+
+#jj #explore-menu ul{
+	height: 268px;
+	padding-top: 20px;
+}
+
+li.home a, li.timeline a, li.fav-subs a, li.celeb-interviews a, li.pants-dance-game a, li.stories a, li.tips a, li.foundation a{
+	background: #e2ece3 url('../img/navigation.png') no-repeat;
+	height: 33.5px;
+}
+li.home a.active, li.timeline a.active, li.fav-subs a.active, li.celeb-interviews a.active, li.pants-dance-game a.active, li.stories a.active, li.tips a.active, li.foundation a.active{
+	background: #f8ef31 url('../img/navigation.png') no-repeat;
+	height: 33.5px !important;
+}
+li.home a:hover, li.timeline a:hover, li.fav-subs a:hover, li.celeb-interviews a:hover, li.pants-dance-game a:hover, li.stories a:hover, li.tips a:hover, li.foundation a:hover{
+	background: #16553c url('../img/navigation.png') no-repeat;
+	height: 31.5px !important;
+}
+li.home a, li.home a.active{
+	background-position: -1px -21px;
+}
+li.home a.active{
+	height: 40px !important;
+	background-position: -1px -11px;
+	padding-top: 10px !important;
+	margin-top: -10px !important;
+}
+li.home a:hover{
+	background-position: -212px -21px;
+	margin-top: 0 !important;
+
+	padding-top: 0 !important;
+}
+li.timeline a, li.timeline a.active{
+	background-position: -1px -54px;
+}
+li.timeline a:hover{
+	background-position: -212px -54px;
+}
+li.fav-subs a, li.fav-subs a.active{
+	background-position: -1px -87px;
+}
+li.fav-subs a:hover{
+	background-position: -212px -87px;
+}
+li.celeb-interviews a, li.celeb-interviews a.active{
+	background-position: -1px -120px;
+}
+li.celeb-interviews a:hover{
+	background-position: -212px -120px;
+}
+li.pants-dance-game a, li.pants-dance-game a.active{
+	background-position: -1px -153px;
+}
+li.pants-dance-game a:hover{
+	background-position: -212px -153px;
+}
+li.stories a, li.stories a.active{
+	background-position: -1px -186px;
+}
+li.stories a:hover{
+	background-position: -212px -186px;
+}
+li.tips a, li.tips a.active{
+	background-position: -1px -219px;
+}
+li.tips a:hover{
+	background-position: -212px -219px;
+}
+li.foundation a, li.foundation a.active{
+	background-position: -1px -252px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	height: 33.5px !important;
+}
+li.foundation a:hover{
+	background-position: -212px -252px;
+	height: 34.5px !important;
+}
+
+/*#jj.home #explore-menu{background: url('../img/home-menu-sprite.png') no-repeat 0 0;}*/
+/*#jj.timeline #explore-menu{background: url('../img/timeline-menu-sprite.png') no-repeat 0 0;}*/
+/*#jj.foundation #explore-menu{background: url('../img/foundation-menu-sprite.png') no-repeat 0 0;}*/
+/*#jj.favs #explore-menu{background: url('../img/favs-menu-sprite.png') no-repeat 0 0;}*/
+/*#jj.stories #explore-menu{background: url('../img/stories-menu-sprite.png') no-repeat 0 0;}*/
+/*#jj.tips #explore-menu{background: url('../img/tips-menu-sprite.png') no-repeat 0 0;}*/
+/*
+#jj.home #explore-menu.home{background: url('../img/home-menu-sprite.png') no-repeat -217px 0;}
+#jj.home #explore-menu.timeline{background: url('../img/home-menu-sprite.png') no-repeat -434px 0;}
+#jj.home #explore-menu.fav-subs{background: url('../img/home-menu-sprite.png') no-repeat -650px 0;}
+#jj.home #explore-menu.stories{background: url('../img/home-menu-sprite.png') no-repeat -867px 0;}
+#jj.home #explore-menu.tips{background: url('../img/home-menu-sprite.png') no-repeat -1084px 0;}
+#jj.home #explore-menu.foundation{background: url('../img/home-menu-sprite.png') no-repeat -1301px 0;}
+
+#jj.timeline #explore-menu.home{background: url('../img/timeline-menu-sprite.png') no-repeat -217px 0;}
+#jj.timeline #explore-menu.timeline{background: url('../img/timeline-menu-sprite.png') no-repeat -434px 0;}
+#jj.timeline #explore-menu.fav-subs{background: url('../img/timeline-menu-sprite.png') no-repeat -650px 0;}
+#jj.timeline #explore-menu.stories{background: url('../img/timeline-menu-sprite.png') no-repeat -867px 0;}
+#jj.timeline #explore-menu.tips{background: url('../img/timeline-menu-sprite.png') no-repeat -1084px 0;}
+#jj.timeline #explore-menu.foundation{background: url('../img/timeline-menu-sprite.png') no-repeat -1301px 0;}
+
+#jj.foundation #explore-menu.home{background: url('../img/foundation-menu-sprite.png') no-repeat -217px 0;}
+#jj.foundation #explore-menu.timeline{background: url('../img/foundation-menu-sprite.png') no-repeat -434px 0;}
+#jj.foundation #explore-menu.fav-subs{background: url('../img/foundation-menu-sprite.png') no-repeat -650px 0;}
+#jj.foundation #explore-menu.stories{background: url('../img/foundation-menu-sprite.png') no-repeat -867px 0;}
+#jj.foundation #explore-menu.tips{background: url('../img/foundation-menu-sprite.png') no-repeat -1084px 0;}
+#jj.foundation #explore-menu.foundation{background: url('../img/foundation-menu-sprite.png') no-repeat -1301px 0;}
+
+#jj.favs #explore-menu.home{background: url('../img/favs-menu-sprite.png') no-repeat -217px 0;}
+#jj.favs #explore-menu.timeline{background: url('../img/favs-menu-sprite.png') no-repeat -434px 0;}
+#jj.favs #explore-menu.fav-subs{background: url('../img/favs-menu-sprite.png') no-repeat -650px 0;}
+#jj.favs #explore-menu.stories{background: url('../img/favs-menu-sprite.png') no-repeat -867px 0;}
+#jj.favs #explore-menu.tips{background: url('../img/favs-menu-sprite.png') no-repeat -1084px 0;}
+#jj.favs #explore-menu.foundation{background: url('../img/favs-menu-sprite.png') no-repeat -1301px 0;}
+
+#jj.stories #explore-menu.home{background: url('../img/stories-menu-sprite.png') no-repeat -217px 0;}
+#jj.stories #explore-menu.timeline{background: url('../img/stories-menu-sprite.png') no-repeat -434px 0;}
+#jj.stories #explore-menu.fav-subs{background: url('../img/stories-menu-sprite.png') no-repeat -650px 0;}
+#jj.stories #explore-menu.stories{background: url('../img/stories-menu-sprite.png') no-repeat -867px 0;}
+#jj.stories #explore-menu.tips{background: url('../img/stories-menu-sprite.png') no-repeat -1084px 0;}
+#jj.stories #explore-menu.foundation{background: url('../img/stories-menu-sprite.png') no-repeat -1301px 0;}
+
+
+#jj.tips #explore-menu.home{background: url('../img/tips-menu-sprite.png') no-repeat -217px 0;}
+#jj.tips #explore-menu.timeline{background: url('../img/tips-menu-sprite.png') no-repeat -434px 0;}
+#jj.tips #explore-menu.fav-subs{background: url('../img/tips-menu-sprite.png') no-repeat -650px 0;}
+#jj.tips #explore-menu.stories{background: url('../img/tips-menu-sprite.png') no-repeat -867px 0;}
+#jj.tips #explore-menu.tips{background: url('../img/tips-menu-sprite.png') no-repeat -1084px 0;}
+#jj.tips #explore-menu.foundation{background: url('../img/tips-menu-sprite.png') no-repeat -1301px 0;}*/
+
+
+#jj #explore-menu li{
+	/*height: 16.6666666%;*/
+}
+#jj #explore-menu li a{
+	display: block;
+	color: transparent;
+}
+
+/**** Home page ****/
+#jj.home .content-wrapper{
+	overflow: auto;
+	background: #fff url(../img/jared-home.jpg) 80px 10px no-repeat;
+	height: 400px;
+}
+
+#jj.home .content{
+	background: #fbffde;
+	width: 491px;
+	float: right;
+	padding: 10px 15px;
+	text-align: center;
+	margin: 10px 0 0 0;
+	position: relative;
+}
+#jj.home .content p{
+	font-weight: bold;
+	padding: 0 1em;
+	color: #00543D;
+}
+#jj.home .content .right-cta{
+	width: 212px;
+	height: 51px;
+	display: block;
+	text-indent: -9999px;
+	left: 161px;
+	position: absolute;
+	margin-top: 25px;
+}
+
+#jj.home .content a.right-cta{
+	margin-right: 18px;
+	background: transparent url(../img/home-cta-right.png) no-repeat 0 0;
+}
+#jj.home .content a:hover{
+	background-position: 0 -51px;
+}
+#jj.home .footer{
+	background: transparent url('../img/home-footer.png') repeat-x top left;
+	height: 152px;
+	margin-top: -42px;
+}
+
+#jj.home .footer a{
+	display: block;
+	height: 60px;
+	float: left;
+	margin-top: 70px;
+	text-decoration: none !important;
+}
+#jj.home .footer a span{
+	visibility: hidden;
+}
+#jj.home .footer .timeline{
+	background: transparent url('../img/home-visit-timeline.png') 0 0 no-repeat;
+	width: 186px;
+	margin-left: 30px;
+}
+#jj.home .footer .foundation{
+	background: transparent url('../img/home-jared-foundation.png') 0 0 no-repeat;
+	width: 292px;
+	margin-left: 116px;
+}
+#jj.home .footer .fav-subs{
+	background: transparent url('../img/home-fav-subs.png') 0 0 no-repeat;
+	width: 221px;
+	margin-left: 76px;
+}
+#jj.home .footer .pants-dance-game{
+	background: transparent url('../img/home-pants-dance-game.png') 0 0 no-repeat;
+	width: 242px;
+	margin-left: 76px;
+}
+
+#jj.home .footer a:hover{
+	background-position: 0 -65px;
+}
+
+/**** Jared Foundation ****/
+#jj.foundation .content-wrapper{
+	background: #E2ECE2 url('../img/foundation/foundation-background.jpg') no-repeat top left;
+	height: 700px;
+	margin-top: 50px;
+}
+#jj.foundation .content{
+	background: #396E5A url('../img/foundation/foundation-picture.jpg') no-repeat top left;
+	margin: 110px 0 0 20px;
+	float: left;
+	height: 325px;
+	width: 920px;
+}
+#jj.foundation .message{
+	width: 300px;
+	height: 282px;
+	float: right;
+	margin: 20px 25px 20px 0;
+	overflow-y: scroll;
+	color: #16543c;
+	padding: 0 20px 0 0;
+}
+#jj.foundation .message a{
+	color: #16543c;
+}
+
+#jj.foundation .facts{
+	float: left;
+	clear: left;
+	background: transparent url('../img/foundation/foundation-facts.png') no-repeat top left;
+	margin: 20px 0 0 20px;
+	width: 550px;
+	height: 160px;
+}
+#jj.foundation .facts ul{
+	margin: 48px 0 0 35px;
+}
+#jj.foundation .facts li{
+	padding: 0 0 0 15px;
+	color: #16543c;
+}
+#jj.foundation .facts li+li{
+	margin-top: 25px;
+}
+#jj.foundation .content-wrapper a.foundation{
+	background: transparent url('../img/foundation/foundation-cta.png') no-repeat 0 0;
+	display: block;
+	width: 315px;
+	height: 60px;
+	text-indent: -9999px;
+	float: left;
+	margin: 80px 0 0 42px;
+}
+#jj.foundation .content-wrapper a.foundation:hover{
+	background-position: 0 -61px;
+}
+
+/**** Favorite Subs ****/
+#jj.favs .content-wrapper{
+	background: #E2ECE2 url('../img/fav-subs/fav-subs-background.jpg') no-repeat 0 0;
+	height: 715px;
+	margin-top: 50px;
+}
+#jj.favs .content a{
+	display: block;
+	text-indent: -9999px;
+}
+#jj.favs .subs a{
+	width: 251px;
+	height: 212px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 75px;
+}
+#jj.favs .subs .chicken{
+	background: transparent url('../img/fav-subs/fav-sub-chicken.jpg') no-repeat 0 0;
+}
+
+#jj.favs .subs .veggie{
+	background: transparent url('../img/fav-subs/fav-sub-veggie.jpg') no-repeat 0 0;
+}
+
+#jj.favs .subs .turkey{
+	background: transparent url('../img/fav-subs/fav-sub-turkey.jpg') no-repeat 0 0;
+}
+#jj.favs .subs a:hover{
+	background-position: 0 -212px;
+}
+#jj.favs .message{
+	float: left;
+	clear: left;
+	width: 420px;
+	text-align: center;
+	margin: 0 0  0 50px;
+}
+#jj.favs .message p{
+	font-size: 16px;
+	font-weight: 600;
+	color: #396E59;
+}
+#jj.favs .message a.cta{
+	background: transparent url('../img/fav-subs/fav-subs-cta.png') no-repeat 0 0;
+	width: 413px;
+	height: 54px;
+}
+#jj.favs .message a.cta:hover{
+	background-position: 0 -60px;
+}
+
+
+/**** Timeline ****/
+
+#jj.timeline .content-wrapper{
+	background: url("../img/timeline/timeline-bkg-top.png") no-repeat scroll 0 0 transparent;
+	margin-top: 50px;
+	position: relative;
+	padding-top: 73px;
+}
+#jj.timeline .content-wrapper:after{
+	bottom: -25px;
+	content: url("../img/timeline/timeline-bkg-bottom.png");
+	display: block;
+	height: 25px;
+	position: absolute;
+	width: 960px;
+}
+#jj.timeline .content{
+	background: url("../img/timeline/timeline-bkg-rpt.png") repeat-y scroll 0 0 transparent;
+	position: relative;
+	overflow: auto;
+	padding: 20px 10px 0 0;
+	width: auto;
+}
+#jj.timeline #date-list-wrapper{
+	position: absolute;
+	right: 0;
+	width: 133px;
+	background: #999;
+}
+#jj.timeline #date-list{
+	background: url("../img/timeline/timeline-date-list.png") no-repeat scroll 0 0 transparent;
+	width: 133px;
+	height: 330px;
+	position: absolute;
+	margin-top: 30px;
+}
+#jj.timeline #date-list.fixed{
+	position: fixed;
+	top: 0;
+}
+#jj.timeline #date-list ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#jj.timeline #date-list li{
+	margin-left: -20px;
+}
+#jj.timeline #date-list li + li{
+	margin-top: 100px;
+}
+#jj.timeline #date-list li.last{
+	margin-top: 110px;
+}
+#jj.timeline #date-list a{
+	text-indent: -9999px;
+	display: block;
+	height: 40px;
+	margin: 0;
+}
+
+#jj.timeline #date-list a.selected{
+	background: url('../img/timeline/timeline-arrow.png') no-repeat left ;
+}
+#jj.timeline .year{
+	margin: 0 0 15px 20px;
+	overflow: auto;
+	width: 770px;
+}
+
+#jj.timeline .year h2{
+	background: url("../img/timeline/year-bkg.png") no-repeat scroll 0 0 transparent;
+	color: #FFFFFF;
+	font-size: 20px;
+	padding: 0px 0 0 5px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+#jj.timeline .row{
+	clear: both;
+	margin-bottom: 1.5em;
+	overflow: auto;
+}
+#jj.timeline .row img,
+#jj.timeline .row a.video{
+	float: left;
+	margin: 0 15px 35px 0;
+}
+#jj.timeline .row h3{
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-decoration: underline;
+	color: #27463b;
+	font-size: 28px;
+	letter-spacing: -0.5px;
+	text-transform: uppercase;
+}
+#jj.timeline .row a{
+	float: right;
+	color: #27463b;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 18px;
+	margin-top: 0;
+}
+#jj.timeline .row p{
+	color: #4b7868;
+}
+
+#jj.timeline .content-wrapper a.foundation{
+	background: transparent url('../img/timeline/visit-jared-foundation-button.png') no-repeat 0 0;
+	display: block;
+	width: 315px;
+	height: 43px;
+	text-indent: -9999px;
+	float: left;
+}
+#jj.timeline .content-wrapper a.foundation:hover{
+	background-position: 0 -50px;
+}
+
+
+/**** Healthy Tips ****/
+#jj.tips .content-wrapper{
+	background: #E2ECE2 url('../img/tips/tips-background.jpg') no-repeat 0 0;
+	height: 570px;
+	margin-top: 30px;
+	position: relative;
+}
+#jj.tips .content{
+	width: 664px;
+	height: 130px;
+	background: #fbffde;
+	position: absolute;
+	top: 110px;
+	left: 270px;
+	border-bottom: 1px solid #9ab4a7;
+	border-top: 1px solid #9ab4a7;
+}
+#jj.tips .slide{
+	width: 504px;
+    margin: 0 0 0 80px;
+}
+
+/* All of the outter & inner wrapper stuff is for vertical centering of the slide text */
+#jj.tips .outer-wrapper{
+    display: table;
+    height: 130px;
+    overflow: hidden;
+}
+#jj.tips .inner-wrapper{
+	display: table-cell;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+#jj.tips .content p{
+	font-size: 22px;
+	line-height: 25px;
+	text-align: center;
+	display: block;
+	margin: 0;
+	*margin: 1em; /*IE7 hack so the text isn't touching the top of the slide */
+	color: #396e59;
+}
+#jj.tips #prev, #jj.tips #next{
+	background: url('../img/tips/slider-controls.png') no-repeat;
+	height: 132px;
+	width: 42px;
+	position: absolute;
+	text-indent: -99999px;
+	cursor: pointer;
+	margin-top: -1px;
+}
+#jj.tips #prev{
+	left: 0;
+	top: 0;
+	background-position: top left;
+}
+#jj.tips #prev:hover{
+	background-position: bottom left;
+}
+#jj.tips #next{
+	right: 0;
+	top: 0;
+	background-position: top right;
+}
+#jj.tips #next:hover{
+	background-position: bottom right;
+}
+
+
+/**** Inspired Stories ****/
+#jj.stories .content-wrapper{
+	background: #E2ECE2 url('../img/stories/stories-background.jpg') no-repeat 0 0;
+	height: 610px;
+	margin-top: 30px;
+	position: relative;
+}
+#jj.stories .map{
+	position: absolute;
+	width: 590px;
+	height: 370px;
+	top: 128px;
+	left: 33px;
+}
+#jj.stories .star{
+	position: absolute;
+	background: transparent url('../img/stories/star.png') no-repeat -18px -18px;
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+}
+#jj.stories .star:hover{
+	background-position: 0 -65px;
+	width: 65px;
+	height: 65px;
+	margin-top: -18px;
+	margin-left: -18px;
+	z-index: 500;
+}
+
+#jj.stories .star .name{
+	left: 35px;
+	position: absolute;
+	top: -35px;
+	height: 90px;
+	width: 400px;
+	display: none;
+	padding: 0 0 0 40px;
+	background: transparent url('../img/stories/tooltip-sprite.png') no-repeat 0 0;
+	z-index: 1000;
+}
+#jj.stories .star:hover .name{
+	display: block;
+}
+
+#jj.stories .star .name span{
+	background: url("../img/stories/tooltip-sprite.png") no-repeat scroll right -103px transparent;
+	display: inline-block;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	height: 90px;
+	line-height: 80px;
+	padding: 0 40px 0 0;
+}
+ #jj.stories .star:hover .name span{
+	display: inline-block;
+ }
+
+ #jj.stories .story{
+ 	background: transparent url('../img/stories/modal-background.png') no-repeat;
+ 	width: 610px;
+ 	height: 345px;
+ 	z-index: 1001;
+ 	position: absolute;
+ 	padding: 60px 50px 50px;
+ 	display: none;
+ 	left: 140px;
+ 	top: 80px;
+ }
+#jj.stories .story h2{
+	font-weight: bold;
+	font-size: 23px;
+	color: #396e59;
+}
+#jj.stories .story .story-content{
+ 	height: 210px;
+ 	overflow-y: auto;
+}
+#jj.stories .story .story-content p{
+ 	font-size: 19px;
+ 	margin-top: 0.5em;
+}
+#jj.stories .story .close,
+#jj.stories .story .prev,
+#jj.stories .story .next{
+	background: transparent url('../img/stories/story-modal-controls.png') no-repeat;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+#jj.stories .story .close{
+	background-position: top right;
+	position: absolute;
+	right: 50px;
+	top: 40px;
+	width: 20px;
+	height: 20px;
+}
+#jj.stories .story .prev,
+#jj.stories .story .next{
+	display: inline-block;
+	height: 35px;
+	margin-top: 1em;
+}
+#jj.stories .story .prev{
+	float: left;
+	width: 30%;
+	background-position: bottom left;
+}
+#jj.stories .story .next{
+	float: right;
+	width: 20%;
+	background-position: bottom right;
+}
+
+#jj.stories .message{
+	background: #fbffde;
+	width: 280px;
+	height: 155px;
+	padding: 20px;
+	margin-left: 600px;
+	margin-top: 200px;
+	z-index: 0;
+	float: left;
+}
+
+#jj.stories .message p{
+	color: #16543b;
+	font-weight: bold;
+	font-size: 14px;
+	margin: 5px 0;
+}
+
+/**** Celebrity Interviews ****/
+#jj.celeb-interviews .content-wrapper{
+	background: #E2ECE2 url('../img/celebrity-interviews/celebrity-interviews-background.jpg') no-repeat 0 0;
+	height: 592px;
+	margin-top: 30px;
+	position: relative;
+}
+
+#jj.celeb-interviews .content{
+/*	width: 664px;
+	height: 130px;
+	background: #fbffde;
+	position: absolute;
+	top: 110px;
+	left: 270px;
+	border-bottom: 1px solid #9ab4a7;
+	border-top: 1px solid #9ab4a7;*/
+}
+#jj.celeb-interviews .content iframe{
+	margin: 94px 0 0 20px;
+	position: absolute;
+	z-index: 2 !important;
+}
+
+#jj.celeb-interviews .content ol#playlist{
+	list-style: none;
+	margin: 89px 0 0 726px;
+	position: absolute;
+	width: 222px;
+}
+
+.content ol#playlist li{
+	background: transparent;
+	color: #16553c;
+	cursor: pointer;
+	height: 67px;
+	width: 222px;
+}
+
+.content ol#playlist li:hover, .content ol#playlist li.active {
+	background: #325c4c;
+	color: #fff;
+}
+
+.content ol#playlist li img{
+	height: 59px;
+	margin: 4px 0 0 4px;
+	width: 85px;
+}
+.content ol#playlist li span{
+	font: bold 15px/25px Helvetica, Arial, sans-serif;
+	float: left;
+	margin: 20px 0 0 7px;
+	position: absolute;
+}
+
+
+/**** Pants Dance Game ****/
+#jj.pants-dance-game .content-wrapper{
+	background: #E2ECE2 url('../img/pants-dance-game/pants-dance-game-background.jpg') no-repeat 0 0;
+	height: 593px;
+	margin-top: 30px;
+	position: relative;
+}
+
+#jj.pants-dance-game .content{
+	height: 498px;
+	margin: 14px 0 0 265px;
+	position: absolute;
+	width: 431px;
+/*	width: 664px;
+	height: 130px;
+	background: #fbffde;
+	position: absolute;
+	top: 110px;
+	left: 270px;
+	border-bottom: 1px solid #9ab4a7;
+	border-top: 1px solid #9ab4a7;*/
+}
+
+
+#jj.pants-dance-game iframe{
+	background: #174e04;
+	background: transparent !important;
+	/*margin: 14px 0 0 265px;*/
+	/*position: absolute;*/
+
+}

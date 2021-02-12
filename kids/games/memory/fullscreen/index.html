@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="msapplication-tap-highlight" content="no"/>		
+		
+        <title>Kids Memory Game</title>
+        <link rel="stylesheet" href="css/reset.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+
+        <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="js/createjs-2013.09.25.min.js"></script>
+        <script type="text/javascript" src="js/ctl_utils.js"></script>
+        <script type="text/javascript" src="js/sprite_lib.js"></script>
+        <script type="text/javascript" src="js/settings.js"></script>
+        <script type="text/javascript" src="js/CLang.js"></script>
+        <script type="text/javascript" src="js/CPreloader.js"></script>
+        <script type="text/javascript" src="js/CMain.js"></script>
+        <script type="text/javascript" src="js/CTextButton.js"></script>
+        <script type="text/javascript" src="js/CGfxButton.js"></script>
+        <script type="text/javascript" src="js/CToggle.js"></script>		
+        <script type="text/javascript" src="js/CMenu.js"></script>
+        <script type="text/javascript" src="js/CGame.js"></script>
+        <script type="text/javascript" src="js/CCard.js"></script>
+        <script type="text/javascript" src="js/CLevels.js"></script>
+        <script type="text/javascript" src="js/CNextLevel.js"></script>
+        <script type="text/javascript" src="js/CInterface.js"></script>
+        <script type="text/javascript" src="js/CGameOver.js"></script>
+        <script type="text/javascript" src="js/CVictory.js"></script>
+		<script type="text/javascript" src="js/CNoPortrait.js"></script>
+		
+
+
+	<style>
+		html[data-useragent*='MSIE 10.0'] .fillAll {
+		  width: 100%; 
+		  height: 100%; 
+		  background-color:#30c1d6;
+		  /*background-image: url("../fullscreen/sprites/bg_body.jpg"); */
+		  background-repeat: repeat !important; 
+		  background-size: 100% auto !important;
+		}	
+	</style>
+
+
+        
+    </head>
+    <body class="kids_game_memory fillAll" ondragstart="return false;" ondrop="return false;">
+          <script>
+            $(document).ready(function(){
+                     var oMain = new CMain({
+												card_per_level : [4,      //NUM CARD IN LEVEL 1
+																  8,      //NUM CARD IN LEVEL 2
+																  16,     //NUM CARD IN LEVEL 3
+																  32      //NUM CARD IN LEVEL 4
+																  ],     
+												
+												time_level:[30,  //NUM SECONDS PER LEVEL 1
+															60,  //NUM SECONDS PER LEVEL 2
+															120, //NUM SECONDS PER LEVEL 3
+															240  //NUM SECONDS PER LEVEL 4
+															],
+												
+												score_match_card: 10,     //SCORE ASSIGNED WHEN USER MATCH TWO CARDS
+												score_time_left_mult: 2,  //MULTIPLIER ASSIGNED TO REMAINING LEVEL TIME
+												time_match_mult: 3000     //TIME AVAILABLE BETWEEN DISCOVERED MATCHING TO GET SCORE MULTIPLIER 
+											});
+
+                     $(oMain).on("game_start", function(evt) {
+                         //alert("game_start");
+                     });
+
+                     $(oMain).on("save_score", function(evt,iScore) {
+                           //alert("iScore: "+iScore );
+                     });
+
+                     $(oMain).on("restart", function(evt) {
+                             //alert("restart");
+                     });
+           });
+
+        </script>
+		
+		<script type="text/javascript">
+			function trackButtonClick(trackPage, strTrackType, url){
+
+				var strTrack = trackPage + ":" + strTrackType;
+				//s.tl(this,'o',strTrack);
+				
+				if(url != null && url != undefined){
+					setTimeout(function(){window.location.href= url;}, 50);
+				}					
+			}
+		</script>
+		
+		
+		 <div id="warning" style="width:100%;display:none;">
+            <img src="sprites/no_portrait.png"  style="width:100%;"/>
+        </div>
+        <canvas id="canvas" class='ani_hack' width="1024" height="768"> </canvas>
+		
+    </body>
+</html>
